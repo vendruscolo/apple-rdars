@@ -1,0 +1,3 @@
+UIBarButtonItem has a property (`possibleTitles`) that the system should use to display the widest title that fits. However, this property is ignored, and the system always displays the `title` set for the item. This results in unpleasant experiences, especially on iOS 26 where items that don’t fit are moved to the overflow menu. In some scenarios, all items might be moved to the overflow menu, resulting in a navigation bar that only displays the (…) button.
+
+See attached project for more information. When the switch is turned on, I would expect the three icons to be visible, together with a button displaying the “short” or “slightly shorter” title.
